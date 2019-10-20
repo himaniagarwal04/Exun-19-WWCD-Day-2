@@ -6,8 +6,8 @@
 def findUnique( arr, n):
       
     res=0
-        for i in range(1,n):
-        res = res ^ arr[i]
+        for i in range(1,n) and arr.count(i)==2:
+        res = res + arr[i]
       
     return res
 
